@@ -21,6 +21,6 @@ Some changes have been made to the original files:
 
 DeepCWind example plots from v113 and v115:
 
-<p align="center"><img src="https://github.com/izabala123/Nemoh/blob/master/other/md%20resources/Aheave.jpg" width="300" title="Heave added mass"></p>
+<p align="center"><img src="https://github.com/izabala123/Nemoh/blob/master/other/md%20resources/Aheave.jpg" width="800" title="Heave added mass"></p>
 
-<p align="center"><img src="https://github.com/izabala123/Nemoh/blob/master/other/md%20resources/Bheave.jpg" width="300" title="Heave damping"></p>
+<p align="center"><img src="https://github.com/izabala123/Nemoh/blob/master/other/md%20resources/Bheave.jpg" width="800" title="Heave damping"></p>
