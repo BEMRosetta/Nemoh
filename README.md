@@ -8,7 +8,9 @@ This repository includes NEMOH v115 source and binaries. These sources have been
 Some changes have been made to the original files:
 - Binaries 'preprocessor', 'solver' and 'postprocessor', have been joined into a single 'nemoh' binary. See instructions below
 - Removed id.dat file, and added estimated time (ET) after each problem solving
-- Added [Code::Blocks](http://cbfortran.sourceforge.net/) .cbp and [Visual Studio](https://visualstudio.microsoft.com/) .sln project files to compile it using [GNU Fortran](https://gcc.gnu.org/fortran/) and [Intel Fortran](https://software.intel.com/en-us/fortran-compilers).
+- Added [Code::Blocks](http://cbfortran.sourceforge.net/) .cbp and [Visual Studio](https://visualstudio.microsoft.com/) .sln project files to compile it using [GNU Fortran](https://gcc.gnu.org/fortran/) and [Intel Fortran](https://software.intel.com/en-us/fortran-compilers)
+- 64 bits binaries included capable of solving meshes of >10000 panels
+- Included DeepCWind example
 
  Options:
    - -h             Shows this help
