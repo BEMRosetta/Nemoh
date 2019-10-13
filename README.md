@@ -14,9 +14,7 @@ Some changes have been made to the original files:
 
  'Nemoh' binary options:
    - -h             Shows this help
-   - -pre
-   - -preprocessor  Runs the preprocessor
+   - -pre -preprocessor  Runs the preprocessor
    - -solver        Runs the solver
-   - -post
-   - -postprocessor Runs the postprocessor
+   - -post -postprocessor Runs the postprocessor
    - -all           Runs preprocessor, solver and postprocessor
