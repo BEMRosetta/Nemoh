@@ -12,7 +12,7 @@ Some changes have been made to the original files:
 - 64 bits binaries included capable of solving meshes of >10000 panels
 - Included DeepCWind example
 
- Options:
+ 'Nemoh' binary options:
    - -h             Shows this help
    - -pre
    - -preprocessor  Runs the preprocessor
