@@ -12,14 +12,14 @@
 !   distributed under the License is distributed on an "AS IS" BASIS,
 !   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 !   See the License for the specific language governing permissions and
-!   limitations under the License. 
+!   limitations under the License.
 !
 !   Contributors list:
-!   - A. Babarit  
+!   - A. Babarit
 !
 !--------------------------------------------------------------------------------------
-    MODULE MMesh
-!    
+MODULE MMesh
+!
     TYPE TMesh
         INTEGER :: Isym                             ! Symmetry about the xOz plane (1 for yes)
         INTEGER :: Npoints                          ! Total number of points in mesh
@@ -32,12 +32,12 @@
         INTEGER,ALLOCATABLE :: cPanel(:)            ! To which body belongs the panel
         REAL,ALLOCATABLE :: A(:)                    ! Area of panel
     END TYPE TMesh
-!    
-    CONTAINS 
+!
+    CONTAINS
 !
 !       Operators for creation, copy, initialisation and destruction
 !
-        SUBROUTINE CreateTMesh(Mesh,Npoints,Npanels,Nbodies)
+	SUBROUTINE CreateTMesh(Mesh,Npoints,Npanels,Nbodies)
         IMPLICIT NONE
         TYPE(TMesh) :: Mesh
         INTEGER :: Npoints,Npanels,Nbodies
@@ -49,15 +49,15 @@
         Mesh%X(:,:)=0.
         Mesh%N(:,:)=0.
         Mesh%XM(:,:)=0.
-        Mesh%P(:,:)=0 
+        Mesh%P(:,:)=0
         Mesh%cPanel(:)=0
         Mesh%A(:)=0.
-        END SUBROUTINE CreateTMesh
-!       --- 
-        SUBROUTINE CopyTMesh(MeshTarget,MeshSource)
+	END SUBROUTINE CreateTMesh
+!       ---
+	SUBROUTINE CopyTMesh(MeshTarget,MeshSource)
         IMPLICIT NONE
         INTEGER :: i,j
-        TYPE(TMesh) :: MeshTarget,MeshSource      
+        TYPE(TMesh) :: MeshTarget,MeshSource
         CALL CreateTMesh(MeshTarget,MeshSource%Npoints,MeshSource%Npanels,MeshSource%Nbodies)
         MeshTarget%Isym=MeshSource%Isym
         DO j=1,MeshTarget%Npoints
@@ -76,10 +76,10 @@
             MeshTarget%cPanel(j)=MeshSource%cPanel(j)
             MeshTarget%A(j)=MeshSource%A(j)
         END DO
-        END SUBROUTINE CopyTMesh
+	END SUBROUTINE CopyTMesh
 !       ---
-        SUBROUTINE ReadTMesh(Mesh,ID)
-#ifndef GNUFORT
+	SUBROUTINE ReadTMesh(Mesh,ID)
+#ifndef __GFORTRAN__
         USE iflport
 #endif
         USE MIdentification
@@ -96,7 +96,7 @@
         OPEN(10,FILE=ID%ID(1:ID%lID)//'/mesh/L10.dat')
         READ(10,*)
         READ(10,*) i,Npoints,Npanels,Nbodies
-         CLOSE(10) 
+         CLOSE(10)
         CALL CreateTMesh(Mesh,Npoints,Npanels,Nbodies)
 !       Read mesh
         OPEN(10,FILE=ID%ID(1:ID%lID)//'/mesh/L12.dat')
@@ -128,14 +128,14 @@
         DO i=1,Npanels
             READ(10,*) Mesh%cPanel(i),(Mesh%XM(k,i),k=1,3),(Mesh%N(k,i),k=1,3),Mesh%A(i)
         END DO
-        CLOSE(10)  
-        END SUBROUTINE ReadTMesh
-!       --- 
-        SUBROUTINE DeleteTMesh(Mesh)
+        CLOSE(10)
+	END SUBROUTINE ReadTMesh
+!       ---
+	SUBROUTINE DeleteTMesh(Mesh)
         IMPLICIT NONE
         TYPE(TMesh) :: Mesh
         DEALLOCATE(Mesh%X,Mesh%N,Mesh%P,Mesh%XM,Mesh%A,Mesh%cPanel)
-        END SUBROUTINE DeleteTMesh  
+	END SUBROUTINE DeleteTMesh
 !       ---
-    END MODULE MMesh
-        
+END MODULE MMesh
+

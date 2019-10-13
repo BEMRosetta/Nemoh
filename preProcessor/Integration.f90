@@ -25,7 +25,7 @@ IMPLICIT NONE
 CONTAINS
 !-- SUBROUTINE ComputeNDS
     SUBROUTINE ComputeNDS(Mesh,c,iCase,Direction,Axis,NDS)  
-    USE MMesh
+    USE MMeshPre
     IMPLICIT NONE
     TYPE(TMesh) :: Mesh
     INTEGER :: c,iCase

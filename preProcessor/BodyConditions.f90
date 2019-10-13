@@ -25,7 +25,7 @@ IMPLICIT NONE
 CONTAINS
 !-- SUBROUTINE ComputeRadiationCondition
     SUBROUTINE ComputeRadiationCondition(Mesh,c,iCase,Direction,Axis,NVEL)  
-    USE MMesh
+    USE MMeshPre
     IMPLICIT NONE
     TYPE(TMesh) :: Mesh
     INTEGER :: c,iCase
@@ -89,7 +89,7 @@ CONTAINS
 !-- SUBROUTINE ComputeDiffractionCondition
     SUBROUTINE ComputeDiffractionCondition(Mesh,w,beta,Environment,PRESSURE,NVEL)
     USE MEnvironment
-    USE MMEsh
+    USE MMeshPre
     IMPLICIT NONE
 !   Inputs/outputs
     TYPE(TMesh)             :: Mesh
@@ -136,7 +136,8 @@ CONTAINS
    END DO
    END SUBROUTINE ComputeDiffractionCondition
 !-- 
-END MODULE
+    END MODULE
+    
 !   PROGRAMMES AQUADYN : (15-04-85) P.GUEVEL,J-C.DAUBISSE,G.DELHOMMEAU  C
 !-- FUNCTION X0   
     REAL FUNCTION X0(AK)

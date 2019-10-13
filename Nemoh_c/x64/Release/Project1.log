@@ -1,0 +1,3 @@
+﻿  date.c
+  LINK : se encontr¾ .netmodule MSIL o un m¾dulo compilado con /GL; reiniciando la vinculaci¾n con /LTCG; agregue /LTCG a la lÝnea de comandos de vÝnculo para mejorar el rendimiento del vinculador
+  Project1.vcxproj -> C:\Desarrollo\Aplicaciones\Nemoh\x64\Release\Nemoh_c.lib

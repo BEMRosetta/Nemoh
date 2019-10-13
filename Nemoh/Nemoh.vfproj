@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{3B1B5DAC-89AF-4137-9D0F-43E96FC5C2A7}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="&quot;$(SolutionDir)bin\&quot;" GenerateDebugInformation="true" SubSystem="subSystemConsole" AdditionalDependencies="SolverLib.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool" CommandLine="xcopy &quot;$(OutDir)\$(TargetName)$(TargetExt)&quot; &quot;$(SolutionDir)bin\&quot; /y"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="&quot;$(SolutionDir)bin\&quot;" SubSystem="subSystemConsole" AdditionalDependencies="SolverLib.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool" CommandLine="xcopy &quot;$(OutDir)\$(TargetName)$(TargetExt)&quot; &quot;$(SolutionDir)bin\&quot; /y"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" AdditionalOptions="/NODEFAULTLIB:MSVCRT" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="&quot;$(SolutionDir)bin\&quot;" GenerateDebugInformation="true" SubSystem="subSystemConsole" AdditionalDependencies="SolverLib.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool" CommandLine="xcopy &quot;$(OutDir)\$(TargetName)$(TargetExt)&quot; &quot;$(SolutionDir)bin\&quot; /y"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64" WholeProgramOptimization="true">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Preprocess="preprocessYes" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="&quot;$(SolutionDir)bin\&quot;" LinkLibraryDependencies="false" SubSystem="subSystemConsole" AdditionalDependencies="$(SolutionDir)$(Platform)\$(Configuration)\Nemoh_c.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64" GenerateStublessProxies="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool" CommandLine="xcopy &quot;$(OutDir)\$(TargetName)$(TargetExt)&quot; &quot;$(SolutionDir)bin\&quot; /y"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="Common">
+		<File RelativePath="..\Common\Environment.f90"/>
+		<File RelativePath="..\Common\Identification.f90"/>
+		<File RelativePath="..\Common\Mesh.f90"/>
+		<File RelativePath="..\Common\Results.f90"/></Filter>
+		<Filter Name="Postprocessor">
+		<File RelativePath="..\postProcessor\Compute_RAOs.f90"/>
+		<File RelativePath="..\postProcessor\IRF.f90"/>
+		<File RelativePath="..\postProcessor\MainPost.f90"/>
+		<File RelativePath="..\postProcessor\Plot_WaveElevation.f90"/></Filter>
+		<Filter Name="Preprocessor">
+		<File RelativePath="..\preProcessor\BodyConditions.f90"/>
+		<File RelativePath="..\preProcessor\Integration.f90"/>
+		<File RelativePath="..\preProcessor\MainPre.f90"/>
+		<File RelativePath="..\preProcessor\MeshPre.f90"/></Filter>
+		<Filter Name="Solver">
+		<File RelativePath="..\Solver\Core\ALLOCATE_DATA.f90"/>
+		<File RelativePath="..\Solver\Core\COM_VAR.f90"/>
+		<File RelativePath="..\Solver\Core\COMPUTE_GREEN_FD.f90"/>
+		<File RelativePath="..\Solver\Core\COMPUTE_GREEN_FREESURFACE.f90"/>
+		<File RelativePath="..\Solver\Core\COMPUTE_GREEN_INFD.f90"/>
+		<File RelativePath="..\Solver\Core\COMPUTE_KOCHIN.f90"/>
+		<File RelativePath="..\Solver\Core\COMPUTE_POTENTIAL_DOMAIN.f90"/>
+		<File RelativePath="..\Solver\Core\DEALLOCATE_DATA.f90"/>
+		<File RelativePath="..\Solver\Core\ELEMENTARY_FNS.f90"/>
+		<File RelativePath="..\Solver\Core\FIC_COM.F90"/>
+		<File RelativePath="..\Solver\Core\INITIALIZATION.f90"/>
+		<File RelativePath="..\Solver\Core\M_SOLVER.f90"/>
+		<File RelativePath=".\Main.f90"/>
+		<File RelativePath="..\Solver\Core\MBodyconditions.f90"/>
+		<File RelativePath="..\Solver\NEMOH.f90"/>
+		<File RelativePath="..\Solver\Core\OUTPUT.f90"/>
+		<File RelativePath="..\Solver\Core\PREPARE_MESH.f90"/>
+		<File RelativePath="..\Solver\Core\SOLVE_BEM.f90"/>
+		<File RelativePath="..\Solver\Core\SOLVE_BEM_FD_DIRECT.f90"/>
+		<File RelativePath="..\Solver\Core\SOLVE_BEM_INFD_DIRECT.f90"/></Filter></Filter></Files>
+	<Globals/></VisualStudioProject>

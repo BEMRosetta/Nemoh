@@ -1,38 +1,44 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "preProcessor", "preProcessor\preProcessor.vfproj", "{966A3ADA-093E-4C23-BD98-26BCF0BA061E}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Nemoh", "Nemoh\Nemoh.vfproj", "{3B1B5DAC-89AF-4137-9D0F-43E96FC5C2A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1BA3AD24-55F7-46B6-B19C-CF523FF48E72} = {1BA3AD24-55F7-46B6-B19C-CF523FF48E72}
+	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "postProcessor", "postProcessor\postProcessor.vfproj", "{8EE0EB67-9FD0-4E2A-B13B-FB9E24B2BB9B}"
-EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Solver", "Solver\Solver.vfproj", "{64404A7B-CEED-4ECA-80DB-22D7AEF2FA2D}"
-EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Mesh", "Mesh\Mesh.vfproj", "{EC685050-D730-4454-9EBC-A0ECA8B0FA69}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nemoh_c", "Nemoh_c\Project1.vcxproj", "{1BA3AD24-55F7-46B6-B19C-CF523FF48E72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Win32 = Debug|Win32
-		Release|Win32 = Release|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{966A3ADA-093E-4C23-BD98-26BCF0BA061E}.Debug|Win32.ActiveCfg = Debug|Win32
-		{966A3ADA-093E-4C23-BD98-26BCF0BA061E}.Debug|Win32.Build.0 = Debug|Win32
-		{966A3ADA-093E-4C23-BD98-26BCF0BA061E}.Release|Win32.ActiveCfg = Release|Win32
-		{966A3ADA-093E-4C23-BD98-26BCF0BA061E}.Release|Win32.Build.0 = Release|Win32
-		{8EE0EB67-9FD0-4E2A-B13B-FB9E24B2BB9B}.Debug|Win32.ActiveCfg = Debug|Win32
-		{8EE0EB67-9FD0-4E2A-B13B-FB9E24B2BB9B}.Debug|Win32.Build.0 = Debug|Win32
-		{8EE0EB67-9FD0-4E2A-B13B-FB9E24B2BB9B}.Release|Win32.ActiveCfg = Release|Win32
-		{8EE0EB67-9FD0-4E2A-B13B-FB9E24B2BB9B}.Release|Win32.Build.0 = Release|Win32
-		{64404A7B-CEED-4ECA-80DB-22D7AEF2FA2D}.Debug|Win32.ActiveCfg = Release|Win32
-		{64404A7B-CEED-4ECA-80DB-22D7AEF2FA2D}.Debug|Win32.Build.0 = Release|Win32
-		{64404A7B-CEED-4ECA-80DB-22D7AEF2FA2D}.Release|Win32.ActiveCfg = Release|Win32
-		{64404A7B-CEED-4ECA-80DB-22D7AEF2FA2D}.Release|Win32.Build.0 = Release|Win32
-		{EC685050-D730-4454-9EBC-A0ECA8B0FA69}.Debug|Win32.ActiveCfg = Debug|Win32
-		{EC685050-D730-4454-9EBC-A0ECA8B0FA69}.Debug|Win32.Build.0 = Debug|Win32
-		{EC685050-D730-4454-9EBC-A0ECA8B0FA69}.Release|Win32.ActiveCfg = Release|Win32
-		{EC685050-D730-4454-9EBC-A0ECA8B0FA69}.Release|Win32.Build.0 = Release|Win32
+		{3B1B5DAC-89AF-4137-9D0F-43E96FC5C2A7}.Debug|x64.ActiveCfg = Debug|x64
+		{3B1B5DAC-89AF-4137-9D0F-43E96FC5C2A7}.Debug|x64.Build.0 = Debug|x64
+		{3B1B5DAC-89AF-4137-9D0F-43E96FC5C2A7}.Debug|x86.ActiveCfg = Debug|Win32
+		{3B1B5DAC-89AF-4137-9D0F-43E96FC5C2A7}.Debug|x86.Build.0 = Debug|Win32
+		{3B1B5DAC-89AF-4137-9D0F-43E96FC5C2A7}.Release|x64.ActiveCfg = Release|x64
+		{3B1B5DAC-89AF-4137-9D0F-43E96FC5C2A7}.Release|x64.Build.0 = Release|x64
+		{3B1B5DAC-89AF-4137-9D0F-43E96FC5C2A7}.Release|x86.ActiveCfg = Release|Win32
+		{3B1B5DAC-89AF-4137-9D0F-43E96FC5C2A7}.Release|x86.Build.0 = Release|Win32
+		{1BA3AD24-55F7-46B6-B19C-CF523FF48E72}.Debug|x64.ActiveCfg = Debug|x64
+		{1BA3AD24-55F7-46B6-B19C-CF523FF48E72}.Debug|x64.Build.0 = Debug|x64
+		{1BA3AD24-55F7-46B6-B19C-CF523FF48E72}.Debug|x86.ActiveCfg = Debug|Win32
+		{1BA3AD24-55F7-46B6-B19C-CF523FF48E72}.Debug|x86.Build.0 = Debug|Win32
+		{1BA3AD24-55F7-46B6-B19C-CF523FF48E72}.Release|x64.ActiveCfg = Release|x64
+		{1BA3AD24-55F7-46B6-B19C-CF523FF48E72}.Release|x64.Build.0 = Release|x64
+		{1BA3AD24-55F7-46B6-B19C-CF523FF48E72}.Release|x86.ActiveCfg = Release|Win32
+		{1BA3AD24-55F7-46B6-B19C-CF523FF48E72}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C85CB0EF-752E-4D9D-8D78-3308D8F3179B}
 	EndGlobalSection
 EndGlobal

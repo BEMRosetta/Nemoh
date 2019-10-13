@@ -27,14 +27,11 @@ END TYPE TID
 !
 CONTAINS
 !   Read ID data from file
-    SUBROUTINE ReadTID(ID,file)
+    SUBROUTINE ReadTID(ID)
     IMPLICIT NONE
-    CHARACTER*(*) :: file
     TYPE(TID) :: ID
-    OPEN(10,FILE=file)
-    READ(10,*) ID%lID
-    READ(10,*) ID%ID
-    CLOSE(10)  
+    ID%lID = 1
+    ID%ID = "."  
     END SUBROUTINE
 !    
 END MODULE MIdentification

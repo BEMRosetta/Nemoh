@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Nemoh Mercurial">
+		<Project filename="Solver.cbp" />
+		<Project filename="preProcessor.cbp" />
+		<Project filename="postProcessor.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
