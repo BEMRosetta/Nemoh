@@ -10,7 +10,7 @@ Some changes have been made to the original files:
 - Removed id.dat file, and added estimated time (ET) after each problem solving
 - Added [Code::Blocks](http://cbfortran.sourceforge.net/) .cbp and [Visual Studio](https://visualstudio.microsoft.com/) .sln project files to compile it using [GNU Fortran](https://gcc.gnu.org/fortran/) and [Intel Fortran](https://software.intel.com/en-us/fortran-compilers)
 - 64 bits binaries included capable of solving meshes of >10000 panels
-- Included DeepCWind offshore wind platfoem example
+- Included DeepCWind offshore wind platform example
 
  'Nemoh' binary options:
    - -h             Shows this help
@@ -19,7 +19,7 @@ Some changes have been made to the original files:
    - -post -postprocessor Runs the postprocessor
    - -all           Runs preprocessor, solver and postprocessor
 
-DeepCWind offshore wind platfoem example plots from v113 and v115:
+DeepCWind offshore wind platform example plots from v113 and v115:
 
 <p align="center"><img src="https://github.com/izabala123/Nemoh/blob/master/other/md%20resources/Aheave.jpg" width="800" title="Heave added mass"></p>
 
