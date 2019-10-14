@@ -24,3 +24,7 @@ DeepCWind offshore wind platform example plots from v113 and v115:
 <p align="center"><img src="https://github.com/izabala123/Nemoh/blob/master/other/md%20resources/Aheave.jpg" width="800" title="Heave added mass"></p>
 
 <p align="center"><img src="https://github.com/izabala123/Nemoh/blob/master/other/md%20resources/Bheave.jpg" width="800" title="Heave damping"></p>
+
+As long simulations may be rather slow, it is adviced in this case to use [BEMRosetta](https://github.com/izabala123/BEMRosetta) NEMOH launcher to parallelize simulations.
+
+The purpose of this project is solely to make available to the community a set of ready to use binaries and sources with the best known version of NEMOH. It is expected that in the near future this project will be overtaken by the blazing fast [Capytaine](https://github.com/mancellin/capytaine) solver developed by [Matthieu Ancellin](https://ancell.in/).
