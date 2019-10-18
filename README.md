@@ -10,7 +10,7 @@ This repository includes v115 source and binaries.**
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
-[NEMOH](https://lheea.ec-nantes.fr/logiciels-et-brevets/nemoh-presentation-192863.kjsp) is a Boundary Element Methods (BEM) code dedicated to the computation of first order wave loads on offshore structures (added mass, radiation damping, diffraction forces). It has been developed by researchers at École Centrale de Nantes for 30 years. Typical use is estimation of dynamic response of floating structures or performance assessment of wave energy converters.
+[NEMOH](https://lheea.ec-nantes.fr/logiciels-et-brevets/nemoh-presentation-192863.kjsp) is a [Boundary Element Methods (BEM)](https://en.wikipedia.org/wiki/Boundary_element_method) code dedicated to the computation of first order wave loads on offshore structures (added mass, radiation damping, diffraction forces). It has been developed by researchers at [École Centrale de Nantes](https://www.ec-nantes.fr/) for 30 years. Typical use is estimation of dynamic response of floating structures or performance assessment of wave energy converters.
 
 NEMOH is the world first open source BEM code. Since January 2014, it has been released under the terms of the Apache 2 licence. Copy of the license may be obtained at http://www.apache.org/licenses/LICENSE-2.0. All the original documentation can be got from [NEMOH Installation](https://lheea.ec-nantes.fr/logiciels-et-brevets/nemoh-presentation-192863.kjsp).
 
