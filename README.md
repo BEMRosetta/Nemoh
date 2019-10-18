@@ -4,7 +4,8 @@
   -->
   
 # Nemoh v115
-**NEMOH is the first open source Boundary Element Methods (BEM) code. This repository includes v115 source and binaries**
+**NEMOH is the first open source Boundary Element Methods (BEM) code.  
+This repository includes v115 source and binaries**
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
