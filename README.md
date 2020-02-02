@@ -3,9 +3,9 @@
   Description: NEMOH is the first open source Boundary Element Method (BEM) code. This repository includes v115 source and binaries.
   -->
   
-# Nemoh v115
+# Nemoh v115 64 bits
 **NEMOH is the first open source Boundary Element Method (BEM) code.  
-This repository includes v115 source and binaries.**
+This repository includes v115 source and binaries compiled in 64 bits able to process >12000 panel meshes**
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
@@ -20,7 +20,7 @@ Some changes have been made to the original files:
 - Binaries 'preprocessor', 'solver' and 'postprocessor', have been joined into a single 'nemoh' binary. See instructions below
 - Removed id.dat file, and added estimated time (ET) after each problem solving
 - Added [Code::Blocks](http://cbfortran.sourceforge.net/) .cbp and [Visual Studio](https://visualstudio.microsoft.com/) .sln project files to compile it using [GNU Fortran](https://gcc.gnu.org/fortran/) and [Intel Fortran](https://software.intel.com/en-us/fortran-compilers)
-- 64 bits binaries included capable of solving meshes of >10000 panels
+- 64 bits binaries included capable of solving meshes of >12000 panels
 - Included DeepCWind offshore wind platform example
 
  'Nemoh' binary options:
