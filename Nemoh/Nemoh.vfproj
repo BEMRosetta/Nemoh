@@ -35,8 +35,8 @@
 				<Tool Name="VFPostBuildEventTool" CommandLine="xcopy &quot;$(OutDir)\$(TargetName)$(TargetExt)&quot; &quot;$(SolutionDir)bin\&quot; /y"/>
 				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
 		<Configuration Name="Release|x64" WholeProgramOptimization="true">
-				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Preprocess="preprocessYes" RuntimeLibrary="rtMultiThreadedDLL"/>
-				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="&quot;$(SolutionDir)bin\&quot;" LinkLibraryDependencies="false" SubSystem="subSystemConsole" AdditionalDependencies="$(SolutionDir)$(Platform)\$(Configuration)\Nemoh_c.lib"/>
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Optimization="optimizeFull" HeapArrays="0" Preprocess="preprocessYes" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="&quot;$(SolutionDir)bin\&quot;" LinkLibraryDependencies="false" SubSystem="subSystemConsole" StackReserveSize="40000000" StackCommitSize="40000000" AdditionalDependencies="$(SolutionDir)$(Platform)\$(Configuration)\Nemoh_c.lib"/>
 				<Tool Name="VFResourceCompilerTool"/>
 				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64" GenerateStublessProxies="true"/>
 				<Tool Name="VFCustomBuildTool"/>
