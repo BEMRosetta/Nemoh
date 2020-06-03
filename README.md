@@ -16,6 +16,8 @@ NEMOH is the world first open source BEM code. Since January 2014, it has been r
 
 This repository includes NEMOH v115 source and binaries. These sources have been got from the [public LHEEA Mercurial repository](http://130.66.47.2/cgi-bin/hgweb.cgi/nemoh/) that holds until version v118. The latest version that generates valid executables is the v115, and it has been shown that the improvements over the [public v113 executables](https://box.lheea.ec-nantes.fr/index.php/s/6MybIloTDqWSFDL) are so significant, that it worths to create this fork providing them to the offshore researchers community.
 
+The Windows binaries run almost out-of-the-box, as the Intel version requires to install previously the [Redistributable Libraries for Intel® Fortran 2019 Compiler for Windows](https://software.intel.com/content/www/us/en/develop/articles/redistributable-libraries-for-intel-c-and-fortran-2019-compilers-for-windows.html), from [here](http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/15799/ww_ifort_redist_msi_2019.5.281.zip). Please install the 64 bits version.
+
 Some changes have been made to the original files:
 - Binaries 'preprocessor', 'solver' and 'postprocessor', have been joined into a single 'nemoh' binary. See instructions below
 - Removed id.dat file, and added estimated time (ET) after each problem solving
